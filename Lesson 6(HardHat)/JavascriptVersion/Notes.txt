@@ -1,0 +1,25 @@
+Hardhat network is very similiar to ganache because it runs a default network, without specifing a network
+
+you can point to the hardhat network
+use: yarn hardhat run scripts/deploy.js --network hardhat
+
+to run a fake node network similiar to ganache
+use: yarn hardhat node
+
+to launch a hardhat console:
+use: yarn hardhat console --network nameNetwork
+
+to clear cache and artifacts
+use: yarn hardhat clean
+
+when running a specific test
+use: yarn hardhat test --grep uniqueWordInFrase
+
+add to detect gas usuage:
+yarn add hardhat-gas-reporter --dev
+
+add solidity code coverage:
+use: yarn add --dev solidity-coverage
+test run: yarn hardhat coverage
+
+

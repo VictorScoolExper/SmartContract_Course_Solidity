@@ -1,0 +1,36 @@
+To compile: use yarn hardhat compile
+
+we can install npm @chainlink/contracts, so we do not get the chainlink address fail
+use: yarn add --dev @chainlink/contracts
+
+hardhat-delpoy is a plugin for replicable deployments and easy testing
+use: yarn add --dev hardhat-deploy
+To install hardhat-deploy-ethers we must use the following, this overrides the @nomiclabs/hardhat-ethers
+use: yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+
+To create mocks, mocks are objects that simulate real objects
+
+AAve: Check it out!!
+
+to deploy scripts, specifying tags
+use: yarn hardhat deploy --tags nameOfTag
+
+Unit test are done locally
+- local hardhat
+- forked hardhat 
+
+Staging tests can be done on a testnet:
+to view overage: run yarn hardhat coverage
+specify running a particular test: yarn hardhat test --grep "words that can be found in test"
+
+
+vs studio code: ctrl+f
+
+Gas optimizacion tips: (this only applies to solidity)
+variables and array lengths are stored in storage. The info in array are Hashed
+constant and immutable variables are not stored in storage.
+variables inside function only exist inside function and are not saved in storage.
+Any body can read off the blockchain
+Opcodes: represent what the machine code are doing and detect computacional gas cost.
+
+

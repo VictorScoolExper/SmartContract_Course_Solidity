@@ -1,0 +1,7 @@
+To use we must first run encrypt the our key
+1) run: ts-node encryptKey.js
+2) run: PRIVATE_KEY_PASSWORD=password ts-node deploy.js
+Note: 
+make sure to change your private key in .env to the correct test wallet.
+to clear history: history -c
+to view history: history
